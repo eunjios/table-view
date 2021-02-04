@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C04A349F25CC367D0090F771 /* FilmInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04A349E25CC367D0090F771 /* FilmInfo.swift */; };
 		C070293C25BBC173002A8314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070293B25BBC173002A8314 /* AppDelegate.swift */; };
 		C070293E25BBC173002A8314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070293D25BBC173002A8314 /* SceneDelegate.swift */; };
 		C070294325BBC173002A8314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C070294125BBC173002A8314 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C04A349E25CC367D0090F771 /* FilmInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmInfo.swift; sourceTree = "<group>"; };
 		C070293825BBC173002A8314 /* Table View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C070293B25BBC173002A8314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C070293D25BBC173002A8314 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				C070295825BBDC23002A8314 /* images */,
 				C070293B25BBC173002A8314 /* AppDelegate.swift */,
 				C070293D25BBC173002A8314 /* SceneDelegate.swift */,
+				C04A349E25CC367D0090F771 /* FilmInfo.swift */,
 				C070295525BBC30C002A8314 /* FilmViewController.swift */,
 				C070294125BBC173002A8314 /* Main.storyboard */,
 				C070296D25BC024B002A8314 /* DetailViewController.swift */,
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04A349F25CC367D0090F771 /* FilmInfo.swift in Sources */,
 				C070293C25BBC173002A8314 /* AppDelegate.swift in Sources */,
 				C070295625BBC30C002A8314 /* FilmViewController.swift in Sources */,
 				C070293E25BBC173002A8314 /* SceneDelegate.swift in Sources */,

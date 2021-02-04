@@ -27,8 +27,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailDateLabel: UILabel!
     
-    var index: Int?
-    var filmInfo: FilmInfo?
+//    var index: Int?
+//    var filmInfo: FilmInfo?
+    
+    let viewModel = DetailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +42,7 @@ class DetailViewController: UIViewController {
     }
     
     func updateUI() {
-        if let filmInfo = self.filmInfo, let index = self.index {
+        if let filmInfo = viewModel.filmInfo, let index = viewModel.index {
             let img = UIImage(named: "\(index).jpg")
             detailImage.image = img
             detailDateLabel.text = "\(filmInfo.date)"
@@ -50,7 +52,15 @@ class DetailViewController: UIViewController {
     @IBAction func close(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+}
+
+class DetailViewModel {
+    var index: Int?
+    var filmInfo: FilmInfo?
     
+    func update(model: FilmInfo?) {
+        filmInfo = model
+    }
 }
 
 
