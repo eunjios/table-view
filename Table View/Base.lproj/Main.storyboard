@@ -127,16 +127,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTO-44-Gri">
+                                <rect key="frame" x="42" y="269" width="329" height="304"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GyR-th-CEW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NAT-OR-eNl" firstAttribute="top" secondItem="GyR-th-CEW" secondAttribute="top" constant="20" id="FsV-U5-5Yn"/>
+                            <constraint firstItem="GyR-th-CEW" firstAttribute="trailing" secondItem="hTO-44-Gri" secondAttribute="trailing" constant="43" id="LG0-pb-ALQ"/>
                             <constraint firstItem="GyR-th-CEW" firstAttribute="trailing" secondItem="NAT-OR-eNl" secondAttribute="trailing" constant="211" id="STb-sE-v6p"/>
+                            <constraint firstItem="GyR-th-CEW" firstAttribute="bottom" secondItem="hTO-44-Gri" secondAttribute="bottom" constant="235" id="Tw7-aA-fcP"/>
+                            <constraint firstItem="hTO-44-Gri" firstAttribute="leading" secondItem="GyR-th-CEW" secondAttribute="leading" constant="42" id="ZrW-Qo-gCy"/>
                             <constraint firstItem="NAT-OR-eNl" firstAttribute="leading" secondItem="GyR-th-CEW" secondAttribute="leading" constant="20" id="bqa-cf-8A4"/>
+                            <constraint firstItem="hTO-44-Gri" firstAttribute="top" secondItem="GyR-th-CEW" secondAttribute="top" constant="269" id="cWz-26-PUL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="detailDateLabel" destination="hTO-44-Gri" id="XGx-70-wNN"/>
                         <outlet property="detailImage" destination="c1A-ZY-3yK" id="Bgm-Vr-lna"/>
                     </connections>
                 </viewController>
